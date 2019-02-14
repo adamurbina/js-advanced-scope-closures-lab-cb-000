@@ -1,5 +1,5 @@
-function produceDrivingRange(limit) {
+function produceDrivingRange(blockRange) {
   return function withinRange(bound) {
-    return bound < limit;
+    return bound < blockRange;
   }
 }
