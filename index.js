@@ -1,10 +1,12 @@
 function produceDrivingRange(blockRange) {
   return function (block1, block2) {
-    if (block > blockRange) {
-      return `${block - blockRange} blocks out of range`
+    const blocks = parseint(block1.substring(0,block1.length-2)) - parseint(block2.substring(0,block2.length-2))
+    
+    if (blocks > blockRange) {
+      return `${blocks - blockRange} blocks out of range`
     }
     else{
-      return `within range by ${blockRange - block}`
+      return `within range by ${blockRange - blocks}`
     }
   };
 }
