@@ -1,5 +1,5 @@
 function produceDrivingRange(blockRange) {
-  return function (block) {
+  return function (block1, block2) {
     if (block > blockRange) {
       return `${block - blockRange} blocks out of range`
     }
